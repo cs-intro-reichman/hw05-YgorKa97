@@ -144,8 +144,8 @@ public class GameOfLife {
 	public static int count(int[][] board, int i, int j) {
 		//// Replace the following statement with your code.
 		int count = 0; // count of naighbors.
-		for (int row = i - 1; row < i + 1; row++) {
-			for (int cols = j - 1; cols < j + 1; cols++) {
+		for (int row = i - 1; row <= i + 1; row++) {
+			for (int cols = j - 1; cols <= j + 1; cols++) {
 				if (board[row][cols] == 1 && (row != i || cols != j)) { // checks if there any live neighbor cells.
 					count++; // counts live neighbors
 				}
